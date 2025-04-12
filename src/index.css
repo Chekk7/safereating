@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Red-purple light filter */
+.red-purple-filter {
+  filter: hue-rotate(300deg) saturate(1.2) brightness(0.9);
+  background-color: rgba(200, 100, 200, 0.15); /* Purple-red overlay */
+}
+
+/* Red-purple light filter */
+.red-purple-filter {
+  filter: hue-rotate(300deg) saturate(1.2) brightness(0.9);
+  background-color: rgba(200, 100, 200, 0.15); /* Purple-red overlay */
+}
