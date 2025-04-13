@@ -1,6 +1,6 @@
 import './index.css';
-import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import BannedFoods from './BannedFoods';
 
 function App() {
   const [isBlueLightFilter, setIsBlueLightFilter] = useState(false);
@@ -14,11 +14,12 @@ function App() {
       <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold'>Safer Eating</h1>
       <p className='text-base sm:text-lg mt-2'>Unveiling risks in processed foods for healthier choices.</p>
       <div className='mt-4 flex flex-col sm:flex-row gap-2 sm:gap-4'>
-        <Button onClick={toggleBlueLightFilter} className='w-full sm:w-auto'>
+        <button onClick={toggleBlueLightFilter} className='w-auto px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm sm:text-base'>
           {isBlueLightFilter ? 'Disable Red-Purple Filter' : 'Enable Red-Purple Filter'}
-        </Button>
-        <Button className='w-full sm:w-auto'>Learn More</Button>
+        </button>
+        <button className='w-auto px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm sm:text-base'>Learn More</button>
       </div>
+      <BannedFoods />
     </div>
   );
 }
